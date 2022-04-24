@@ -1,0 +1,470 @@
+/************************************************************/
+/**  Base  **/
+/************************************************************/
+/* body{
+    width:100vw;
+    height:100vh;
+} */
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+h1{
+    font-size: 3.5em;
+}
+a{
+    display: block;
+    text-decoration:none;
+    color:black;
+}
+a:hover{
+    color:#5A777B;
+}
+a:active{
+    font-weight:bold;
+}
+/************************************************************/
+/**  Header  **/
+/************************************************************/
+#hamburgerNav{
+    display:none;
+}
+nav{
+    height: 7em;
+    padding: 1%;
+    font-size: 1em;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+#originalNav>ul{
+    width:70%;
+    display:flex;
+    justify-content:space-between;
+    padding-top:0.5em;
+}
+#originalNav li{
+    list-style-type:none;
+}
+nav>img{
+    padding: 1em 0 0 1em;
+    width: 5em;
+}
+#originalNav>a{
+    margin-right:2em;
+    padding-top:0.5em;
+}
+/************************************************************/
+/**  Main  **/
+/************************************************************/
+
+main{
+    width:100%;
+    height:100vh;
+ }
+
+main>section{
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-start;
+    align-items:flex-start;
+    padding-top:7em;
+    padding-left:10%;
+    min-width:20em;
+    width:100%;
+    height:75%;
+    background: url("../images/SalonBanner.jpg") right no-repeat;
+    background-size: cover;
+}
+main h1, h5{
+    color:white;
+    font-weight:100;
+}
+main h1, h5, h6{
+    margin-bottom: 1em;
+}
+main section>a{
+    padding:1em 2em;
+    width: 15em;
+    margin: 1em 0;
+    background:black;
+    color:white;
+    font-size: 0.75em;
+    text-align: center;
+}
+main>div{
+    position:relative;
+    bottom:30%;
+    left:10%;
+    margin:5em 0;
+    width: 15em;
+    height: 15em;
+    padding: 2em 2em;
+    background: black;
+    color: white;
+    box-shadow: 0.2em 0.2em 0.2em rgba(0,0,0,0.2);
+    display:flex;
+    justify-content:center;
+    flex-direction:column;
+}
+main>div>a{
+    margin: 1em 0;
+    padding:1em;
+    background: white;
+    color: black;
+    width:13em;
+    height:5em;
+    font-size:0.75em;
+    font-weight:bold;
+    text-align:center;
+}
+main div span{
+    font-size: 3em;
+}
+/************************************************************/
+/**  Services  **/
+/************************************************************/
+.services{
+    width:100%;
+    text-align:center;
+    display:flex;
+    justify-content:space-evenly;
+    align-items:center;
+}
+.services>div{
+    padding:0 3em 5em 3em;
+    max-width:400px;
+}
+.services p{
+    padding:1em 0;
+    font-size:1em;
+}
+/************************************************************/
+/**  Haircut  **/
+/************************************************************/
+.haircut{
+    padding:5em;
+    background: rgb(243,244,246);
+}
+.haircut>article{
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+}
+
+.haircut h2{
+    font-size: 2em;
+}
+.haircut div>p{
+    font-size:1em;
+    margin-bottom:2em;
+    padding-right:5%;
+    line-height:2em;
+    text-align:justify;
+}
+.haircut div>a{
+    background: black;
+    font-size:1em;
+    width: 9em;
+    text-align:center;
+    padding:15px 20px;
+    color: white;
+    margin: 3% 0;
+}
+.haircut img{
+
+    width:50%;
+}
+/************************************************************/
+/**  Crew  **/
+/************************************************************/
+.crew{
+    padding: 5em 0 2em 0;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align: center;
+}
+.crew h2{
+    margin-bottom:2em;
+    font-size:2em;
+}
+.crew article{
+    width:100%;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-evenly;
+    align-items:center;
+}
+.crew div>span{
+    font-size: 0.7em;
+}
+.crew div>div{
+    position: relative;
+    z-index:1;
+    bottom:2em;
+    margin:0 10%;
+    background: black;
+    width: 14em;
+    padding: 0.8em;
+    color: white;
+    font-size: 12px;
+}
+.crew img{
+    width: 200px;
+    padding:0 2%;
+}
+/************************************************************/
+/**  Coupon  **/
+/************************************************************/
+.coupon{
+    padding:10%;
+}
+.coupon>div{
+    background: url("../images/Coupon4.png") right no-repeat;
+    background-size: cover;
+    padding: 3em 0 3em 3em;
+}
+.coupon *{
+    padding: 1% 0;
+}
+.coupon h2>span{
+    font-size: 2em;
+    font-weight: 900;
+    padding:0;
+}
+.coupon div>a{
+    margin-top: 2%; 
+    background: black;
+    width: 15em;
+    padding: 1em 1.5em;
+    color: white;
+    font-size: 1em;
+    text-align:center;
+}
+/************************************************************/
+/**  Catalogue  **/
+/************************************************************/
+.catalogue{
+    margin:10% 15%;
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-start;
+    align-items:center;
+}
+.catalogue>section{
+    padding:10px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    flex-wrap:wrap;
+    width:660px;
+    height:660px;
+}
+.catalogue section>img{
+    display:block;
+    margin:5px;
+}
+
+/************************************************************/
+/**  Media Queries  **/
+/************************************************************/
+
+@media all and (max-width:780px){
+    #originalNav{
+        display:none;
+    }
+    main>section{
+        background-position:80% 0;
+        height:85%;
+    }
+    .services{
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+    }
+    .haircut{
+        padding: 3em;
+        text-align:center;
+    }
+    .haircut img{
+        margin: 2em 0;
+    }
+    .haircut div{
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+    }
+    .catalogue>section{
+        height:100%;
+        width:100%;
+    }
+
+    /*Hamburger Menu*/
+
+    #hamburgerNav{
+        position:fixed;
+        top:0;
+        left:0;
+        z-index: 2;
+        display:block;
+        width:100%;
+        padding: 1em;
+        font-size: 1em;
+        display:flex;
+        justify-content:flex-end;
+        align-items:center;
+
+    }
+
+    #hamburgerNav .toggler{
+        position:absolute;
+        top:0;
+        left:0;
+        z-index:3;
+        cursor:pointer;
+        width:50px;
+        height:50px;
+        opacity:0;
+    }
+    #hamburgerNav .hamburger{
+        position:absolute;
+        top:1em;
+        left:1em;
+        z-index:2;
+        width:60px;
+        height:60px;
+        padding:1rem;
+        background:#5A777B;
+        border: 0.1px solid #5A777B;
+        border-radius: 15px;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+    }
+
+    /*Hamburger Lines*/
+    #hamburgerNav .hamburger>div{
+        position:relative;
+        width:100%;
+        height: 2px;
+        background:white;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        transition: all 0.4s ease;
+    }
+    #hamburgerNav .hamburger>div:before,
+    #hamburgerNav .hamburger>div:after{
+        content:'';
+        position: absolute;
+        z-index: 2;
+        top:-10px;
+        width:100%;
+        height: 2px;
+        background:inherit;
+    }
+    #hamburgerNav .hamburger>div:after{
+        top: 10px;
+    }
+
+    /*Toggler Animate*/
+    #hamburgerNav .toggler:checked + .hamburger>div{
+        transform: rotate(135deg);
+    }
+
+    /*Turn Lines into x*/
+    #hamburgerNav .toggler:checked + .hamburger>div:before,
+    #hamburgerNav .toggler:checked + .hamburger>div:after{
+        top:0;
+        transform: rotate(90deg);
+    }
+    /*Rotate on Hover when cheked*/
+    #hamburgerNav .toggler:checked:hover + .hamburger>div{
+        transform: rotate(225deg);
+    }
+    /*Style Menu*/
+    #hamburgerNav .toggler:checked ~ .menu{
+        visibility: visible;
+    }
+    #hamburgerNav .toggler:checked ~ .menu>div{
+        transform:scale(1);
+        transition-duration: 0.75s;
+    }
+    #hamburgerNav .toggler:checked ~ .menu>div>div{
+        opacity:1;
+        transition: opacity 0.4s ease;
+    }
+
+    #hamburgerNav .menu{
+        position:fixed;
+        top:0;
+        left:0;
+        width:100%;
+        height:100vh;
+        visibility:hidden;
+        overflow:hidden;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+    }
+    #hamburgerNav .menu>div{
+        background: rgba(90,119,123,0.9);
+        border-radius:50%;
+        width:200vw;
+        height:200vh;
+        display:flex;
+        flex:none;
+        align-items:center;
+        justify-content:center;
+        transform: scale(0);
+        transition: all 0.4s ease;
+    }
+    #hamburgerNav .menu>div>div{
+        text-align:center;
+        max-width: 90vw;
+        max-height: 100vh;
+        opacity:0;
+        transition: opacity 0.4s ease;
+    }
+    #hamburgerNav .menu ul>li{
+        list-style: none;
+        color:white;
+        font-size: 1.5em;
+        padding: 1.5em;
+    }
+
+    #hamburgerNav .menu ul>li>a{
+        color:inherit;
+        text-decoration:none;
+        transition:color 0.4s ease;
+    }
+
+    .services,.crew>article{
+        flex-direction:column;
+    }
+    .haircut>article{
+        flex-direction:column-reverse;
+    }
+    .haircut img{
+        width:100%;
+    }
+    .coupon>div{
+        background-position:center;
+    }
+    .catalogue>section{
+        display:flex;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+    #more{
+        order:1;
+    }
+}
+
+
